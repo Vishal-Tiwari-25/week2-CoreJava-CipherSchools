@@ -1,0 +1,58 @@
+class Demo{
+    private int a=5;
+    private int b=10;
+    private int d=15;
+    private int d=20;
+    public int getA(){
+            System.out.println("a value is retrived");
+              return this.a;
+    }
+    public void setA(int x){
+        System.out.println("a is setted to value:"+x);
+         this.a=x;
+    }
+    public int getB(){
+        System.out.println("b value is retived:");
+         return this.b;
+    }
+    public void setB(int x){
+        if(x>200){
+            System.out.println("b is setted to value:"+x);
+           this.b=x;
+        }
+        else{
+            System.out.println("b is not setted to value:"+x);
+        }
+    }
+    public int getC(){
+         return this.a;
+    }
+
+    public void setC(int x){
+         this.c=x;
+    }
+
+    public int getD(){
+         return this.d;
+    }
+    public void setD(int x){
+         this.d=x;
+    }
+
+}
+public class encapsulation {
+    public static void main(String[] args) {
+        Demo d=new Demo();
+        Demo d1=new Demo();
+        System.out.println(d.getA());
+        d.setA(100);
+        System.out.println(d.getA());
+        System.out.println(d1.getA());
+        System.out.println(d.getB());
+        d.setB(199);
+        System.out.println(d.getB());
+        d.setB(201);
+        System.out.println(d.getB());
+        
+    }
+}
